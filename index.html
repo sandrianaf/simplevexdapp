@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Simple VexDapp datamhs</title>
+	
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        .center {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+	<div class= "center">
+    <h1>Selamat Datang di Dapp Data Mahasiswa</h1>
+
+	<div id="login">
+		<button onclick="konekwallet();">Login</button>
+	</div>
+	
+	<div id="gotin" style="display:none;">
+		Welcome <b><span id="username"></span></b>
+		<br>
+        <a href="index.html">
+		<div>
+			<button id="logout" onclick="logout();">Logout</button>
+		</div></a>
+	</div>
+
+    <div id="masuk" style="display:none;">
+		<a href="index_2.html"> <button id="masuk">Masuk</button></a>
+	</div>
+
+    <br>
+    <br>
+    <div>
+        <form>
+            <div>
+                <label for="">Account</label><br>
+                <input type="text" class="form-control" id="user" placeholder="Masukkan Account" ><br>
+                <label for="">Nama</label><br>
+                <input type="text" class="form-control"id="nama" placeholder="Masukkan Nama"><br>
+                <label for="">Jurusan</label><br>
+                <input type="text" class="form-control" id="jurusan" placeholder="Masukkan Jurusan"><br>
+                <button class = "center" type="button" onclick="update();" id="button_update" style="display:none">Update</button><br>
+                <button type="button" onclick="simpan();" id="button_save">Save</button><br>
+            </div>
+        </form>
+    </div>
+        <br><br>
+    
+    </div>
+    
+    <table class="center">
+        <thead>
+        <tr>
+            <th scope="col">Account</th>
+            <th scope="col">Nama Mahasiswa</th>
+            <th scope="col">Jurusan</th>
+            <th scope="col">Option</th>
+        </tr>
+        </thead>
+        <tbody id="data_table"></tbody>
+    </table>
+
+    
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/vex.min.js" type="text/javascript"></script>
+    <script src="js/scatterjs-core.min.js" type="text/javascript"></script>
+    <script src="js/scatterjs-plugin-vexjs.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
